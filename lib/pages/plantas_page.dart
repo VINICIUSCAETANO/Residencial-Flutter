@@ -13,21 +13,38 @@ class PlantasPage extends StatelessWidget {
 
   ListView _body() {
     return ListView(
+      itemExtent: 300,
       children: <Widget>[
         _foto('planta1.jpg'),
         _foto('planta2.jpg'),
-        _foto('planta3.jpeg'),
+        _foto('planta3.jpg'),
         _foto('planta4.jpg'),
       ],
     );
   }
 
-  Padding _foto(String path) {
-    return Padding(
-        padding: EdgeInsets.all(4),
-        child: Image.asset(
-          'assets/images/' + path,
-          fit: BoxFit.contain,
-        ));
+  Stack _foto(String path) {
+    return Stack(
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(4),
+          child: Image.asset(
+            'assets/images/' + path,
+            fit: BoxFit.contain,
+          ),
+        ),
+        Container(
+          padding: EdgeInsets.all(10),
+          alignment: Alignment.bottomLeft,
+          child: Text(
+            'Modelo: Califórnia\n345000',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),
+          ),
+        ),
+      ],
+    );
   }
 }
