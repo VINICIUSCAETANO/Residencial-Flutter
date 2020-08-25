@@ -11,7 +11,7 @@ class PlantasPage extends StatelessWidget {
     );
   }
 
-  _body() {
+  ListView _body() {
     return ListView(
       children: <Widget>[
         _foto('planta1.jpg'),
@@ -24,7 +24,7 @@ class PlantasPage extends StatelessWidget {
 
   Padding _foto(String path) {
     return Padding(
-        padding: EdgeInsets.only(bottom: 4),
+        padding: EdgeInsets.all(4),
         child: Image.asset(
           'assets/images/' + path,
           fit: BoxFit.contain,
