@@ -1,6 +1,6 @@
 # residencial2
 
-A new Flutter project.
+A Flutter project for renting houses.
 
 ## Getting Started
 
