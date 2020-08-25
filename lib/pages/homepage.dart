@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
 
   Image _foto(String path) {
     return Image.asset(
-      'assets/images' + path,
+      'assets/images/' + path,
       fit: BoxFit.contain,
     );
   }
