@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:residencial2/pages/menu_drawer.dart';
 import 'plantas_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -8,6 +9,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Residencial Avenida'),
       ),
+      drawer: MenuDrawer(),
       body: _body(context),
     );
   }
